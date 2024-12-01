@@ -65,7 +65,7 @@ Permeability measurement methods include laboratory core analysis and field-scal
 
 \begin{itemize}
     \item Laboratory core analysis using steady-state flow experiments requires careful control of pressure gradients, saturation history, and wettability equilibrium \parencite{chapuis_use_2003}.
-    \item Field-scale well testing provides averaged permeability values over larger volumes, incorporating heterogeneity and natural fractures 1988\parencite{honarpour_relative-permeability_1988}.
+    \item Field-scale well testing provides averaged permeability values over larger volumes, incorporating heterogeneity and natural fractures\parencite{honarpour_relative-permeability_1988}.
 \end{itemize}
 
 The selection of appropriate measurement techniques and proper interpretation of results requires understanding how permeability measurements can be effectively applied to reservoir characterization and performance prediction.
@@ -88,12 +88,7 @@ K_{ij} := \frac{1}{|Y|}\int_{Y_s}(\omega_j)_i dy
 
 where $Y_s$ represents the pore space and $\omega_j$ are solutions to supplementary cell problems.
 
-The implementation of these advanced characterization methods has significant implications for:
-\begin{itemize}
-    \item Prediction of fluid flow patterns and reservoir performance
-    \item Estimation of recovery factors and production rates
-    \item Design of enhanced oil recovery operations
-\end{itemize}
+The implementation of these advanced characterization methods has significant implications for several aspects of reservoir engineering: accurate prediction of fluid flow patterns and reservoir performance, reliable estimation of recovery factors and production rates, and optimized design of enhanced oil recovery operations. These methods enable more effective reservoir management through improved understanding of flow behavior and production dynamics.
 
 This integrated approach enables more reliable reservoir simulations and production forecasts by linking geological observations to engineering parameters, particularly in complex carbonate reservoirs where traditional porosity-permeability relationships may be insufficient.
 
@@ -105,6 +100,7 @@ Having established the theoretical foundations and measurement approaches for pe
 
 \subsection{Basic Concepts and Relationships}
 Reservoir quality is fundamentally controlled by the pore system characteristics and fluid flow capacity. While porosity quantifies storage capacity, permeability determines the ability of fluids to flow through the porous medium \parencite{yang_permeabilityporosity_2010}.
+
 The Kozeny-Carman equation was developed to predict permeability based on measurable rock properties. Originally proposed by Kozeny and later modified by Carman, the equation relates permeability to porosity and specific surface area \parencite{chapuis_use_2003}:
 \begin{equation}
 k = \frac{c_0}{S_1^2}\frac{\phi^3}{(1-\phi)^2}
@@ -143,16 +139,19 @@ While understanding the relationship between reservoir quality and permeability 
 
 \section{Permeability and Fluid Flow}
 Fluid flow through porous media is complex and cannot be described by theory alone. While absolute permeability represents the intrinsic flow capacity of a porous medium, the actual fluid transport in reservoirs typically involves multiple fluid phases, where the ability of each fluid to flow is reduced by the presence of other fluids.
+
 The fundamental relationship governing single-phase fluid flow through porous media is Darcy's law, which relates the macroscopic velocity (flux) of a fluid to the pressure gradient through the permeability coefficient:
 \begin{equation}
 u + \frac{1}{\mu} K\nabla p = f
 \end{equation}
 where $u$ is the Darcy velocity, $\mu$ is fluid viscosity, $K$ is permeability tensor, $p$ is pressure, and $f$ represents external forces.
+
 In multiphase flow systems, the relationship between capillary pressure ($P_c$), interfacial tension ($\sigma$), and pore radius ($r$) is described by:
 \begin{equation}
 P_c = P_{nw} - P_w = \frac{2\sigma\cos\theta}{r}
 \end{equation}
 where $P_{nw}$ and $P_w$ are the pressures in the non-wetting and wetting phases respectively, and $\theta$ is the contact angle \parencite{honarpour_relative-permeability_1988}. This relationship fundamentally controls fluid distribution at the pore scale.
+
 For two-phase flow, relative permeability ($k_r$) relationships can be approximated using the Brooks-Corey model:
 \begin{equation}
 k_{rw} = k_{rw}^o(\frac{S_w - S_{wc}}{1 - S_{wc}})^{n_w}

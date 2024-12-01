@@ -64,15 +64,15 @@ The relationship between permeability and pore types is particularly important i
 Permeability measurement methods include laboratory core analysis and field-scale measurements, each with distinct advantages and limitations:
 
 \begin{itemize}
-    \item Laboratory core analysis using steady-state flow experiments requires careful control of pressure gradients, saturation history, and wettability equilibrium (Chapuis and Aubertin, 2003\cite{chapuis_use_2003})
-    \item Field-scale well testing provides averaged permeability values over larger volumes, incorporating heterogeneity and natural fractures (Honarpour and Mahmood, 1988\cite{honarpour_relative-permeability_1988})
+    \item Laboratory core analysis using steady-state flow experiments requires careful control of pressure gradients, saturation history, and wettability equilibrium (Chapuis and Aubertin, 2003\parencite{chapuis_use_2003})
+    \item Field-scale well testing provides averaged permeability values over larger volumes, incorporating heterogeneity and natural fractures (Honarpour and Mahmood, 1988\parencite{honarpour_relative-permeability_1988})
 \end{itemize}
 
 The selection of appropriate measurement techniques and proper interpretation of results requires understanding how permeability measurements can be effectively applied to reservoir characterization and performance prediction.
 
 \subsection{Applications in Reservoir Performance}
 
-Modern approaches integrate rock fabric with petrophysical properties for improved reservoir characterization (Lucia, 1995\cite{f_jerry_lucia_2_rock-fabricpetrophysical_1995}). Three key petrophysical classes have been identified:
+Modern approaches integrate rock fabric with petrophysical properties for improved reservoir characterization (Lucia, 1995\parencite{f_jerry_lucia_2_rock-fabricpetrophysical_1995}). Three key petrophysical classes have been identified:
 
 \begin{itemize}
     \item Class 1: Grainstones and large crystalline dolostones
@@ -80,7 +80,7 @@ Modern approaches integrate rock fabric with petrophysical properties for improv
     \item Class 3: Mud-dominated fabrics and fine crystalline dolostones
 \end{itemize}
 
-Recent developments include upscaling methods that calculate the full permeability tensor (Schulz et al., 2019\cite{schulz_beyond_2019}):
+Recent developments include upscaling methods that calculate the full permeability tensor (Schulz et al., 2019\parencite{schulz_beyond_2019}):
 
 \begin{equation}
 K_{ij} := \frac{1}{|Y|}\int_{Y_s}(\omega_j)_i dy
@@ -104,8 +104,8 @@ While these theoretical frameworks provide the essential foundation for understa
 Having established the theoretical foundations and measurement approaches for permeability, we now examine how reservoir quality and various rock properties influence permeability in practice. This understanding is crucial for accurate prediction of fluid flow behavior in real reservoir systems.
 
 \subsection{Basic Concepts and Relationships}
-Reservoir quality is fundamentally controlled by the pore system characteristics and fluid flow capacity. While porosity quantifies storage capacity, permeability determines the ability of fluids to flow through the porous medium (Yang and Aplin, 2010\cite{yang_permeabilityporosity_2010}).
-The Kozeny-Carman equation was developed to predict permeability based on measurable rock properties. Originally proposed by Kozeny and later modified by Carman, the equation relates permeability to porosity and specific surface area (Chapuis and Aubertin, 2003\cite{chapuis_use_2003}):
+Reservoir quality is fundamentally controlled by the pore system characteristics and fluid flow capacity. While porosity quantifies storage capacity, permeability determines the ability of fluids to flow through the porous medium (Yang and Aplin, 2010\parencite{yang_permeabilityporosity_2010}).
+The Kozeny-Carman equation was developed to predict permeability based on measurable rock properties. Originally proposed by Kozeny and later modified by Carman, the equation relates permeability to porosity and specific surface area (Chapuis and Aubertin, 2003\parencite{chapuis_use_2003}):
 \begin{equation}
 k = \frac{c_0}{S_1^2}\frac{\phi^3}{(1-\phi)^2}
 \end{equation}
@@ -113,11 +113,11 @@ k = \frac{c_0}{S_1^2}\frac{\phi^3}{(1-\phi)^2}
 \begin{equation}
 S_1 = (1-\phi)S
 \end{equation}
-\noindent where $S$ represents the specific surface with respect to the unit volume of solid matrix. The Kozeny constant $c_0$ was empirically determined to be approximately $\frac{1}{5}$ for diverse geometries, accounting for tortuosity effects in real porous media (Yang and Aplin, 2010\cite{yang_permeabilityporosity_2010}).
+\noindent where $S$ represents the specific surface with respect to the unit volume of solid matrix. The Kozeny constant $c_0$ was empirically determined to be approximately $\frac{1}{5}$ for diverse geometries, accounting for tortuosity effects in real porous media (Yang and Aplin, 2010\parencite{yang_permeabilityporosity_2010}).
 
 \subsection{Controlling Factors on Permeability}
 
-In real reservoir rocks, particularly in fine-grained sediments, permeability variations can span several orders of magnitude at a given porosity (Yang and Aplin, 2010\cite{yang_permeabilityporosity_2010}). Beyond the basic geometric factors captured in the Kozeny-Carman equation, this variation is controlled by:
+In real reservoir rocks, particularly in fine-grained sediments, permeability variations can span several orders of magnitude at a given porosity (Yang and Aplin, 2010\parencite{yang_permeabilityporosity_2010}). Beyond the basic geometric factors captured in the Kozeny-Carman equation, this variation is controlled by:
 
 \begin{figure}[t]
     \centering
@@ -132,7 +132,7 @@ In real reservoir rocks, particularly in fine-grained sediments, permeability va
     \item Stress effects: The influence of effective stress on both porosity and permeability.
 \end{itemize}
 
-For mudstones, Yang and Aplin (2010)\cite{yang_permeabilityporosity_2010} developed a more comprehensive relationship incorporating clay content (CF):
+For mudstones, Yang and Aplin (2010)\parencite{yang_permeabilityporosity_2010} developed a more comprehensive relationship incorporating clay content (CF):
 \begin{align}
 \ln(K) = 69.59 - 26.79\cdot\text{CF} + 44.07\cdot\text{CF}^{0.5} + \nonumber\\
 (53.61 - 80.03\cdot\text{CF} + 132.78\cdot\text{CF}^{0.5})\cdot e
@@ -154,7 +154,7 @@ In multiphase flow systems, the relationship between capillary pressure ($P_c$),
 \begin{equation}
 P_c = P_{nw} - P_w = \frac{2\sigma\cos\theta}{r}
 \end{equation}
-where $P_{nw}$ and $P_w$ are the pressures in the non-wetting and wetting phases respectively, and $\theta$ is the contact angle (Honarpour and Mahmood, 1988\cite{honarpour_relative-permeability_1988}). This relationship fundamentally controls fluid distribution at the pore scale.
+where $P_{nw}$ and $P_w$ are the pressures in the non-wetting and wetting phases respectively, and $\theta$ is the contact angle (Honarpour and Mahmood, 1988\parencite{honarpour_relative-permeability_1988}). This relationship fundamentally controls fluid distribution at the pore scale.
 For two-phase flow, relative permeability ($k_r$) relationships can be approximated using the Brooks-Corey model:
 \begin{equation}
 k_{rw} = k_{rw}^o(\frac{S_w - S_{wc}}{1 - S_{wc}})^{n_w}
@@ -177,9 +177,9 @@ The displacement efficiency in a reservoir is controlled by the competition betw
 N_c = \frac{v\mu}{\sigma}
 \end{equation}
 where $v$ is the characteristic velocity. This dimensionless number helps predict the dominant forces controlling fluid displacement.
-As explained by Honarpour and Mahmood (1988)\cite{honarpour_relative-permeability_1988}, the sum of effective permeabilities for all phases is less than the absolute permeability due to interference between fluids sharing the same flow channels. The ratio of effective permeability to absolute permeability (relative permeability) has a first-order dependency on saturation level.
+As explained by Honarpour and Mahmood (1988)\parencite{honarpour_relative-permeability_1988}, the sum of effective permeabilities for all phases is less than the absolute permeability due to interference between fluids sharing the same flow channels. The ratio of effective permeability to absolute permeability (relative permeability) has a first-order dependency on saturation level.
 Two key experimental approaches are used to determine relative permeability: steady-state methods where multiple fluids are injected simultaneously until equilibrium is reached, and unsteady-state techniques where one fluid displaces another. Steady-state methods provide more reliable data but are time-consuming.
-For carbonate rocks, Lucia (1995)\cite{f_jerry_lucia_2_rock-fabricpetrophysical_1995} demonstrates that both relative permeability and capillary pressure characteristics are strongly influenced by pore geometry and wettability. The interplay between absolute permeability, relative permeability, and capillary pressure ultimately controls fluid displacement processes and recovery efficiency. Yang and Aplin (2010)\cite{yang_permeabilityporosity_2010} show these relationships are heavily dependent on rock properties like clay content and pore size distribution.
+For carbonate rocks, Lucia (1995)\parencite{f_jerry_lucia_2_rock-fabricpetrophysical_1995} demonstrates that both relative permeability and capillary pressure characteristics are strongly influenced by pore geometry and wettability. The interplay between absolute permeability, relative permeability, and capillary pressure ultimately controls fluid displacement processes and recovery efficiency. Yang and Aplin (2010)\parencite{yang_permeabilityporosity_2010} show these relationships are heavily dependent on rock properties like clay content and pore size distribution.
 The direction-dependent nature of permeability, particularly in layered sedimentary rocks, adds further complexity. This directional variation must be considered when predicting fluid flow patterns at both core and reservoir scales. While absolute permeability provides a starting point for understanding fluid flow capacity, reliable experimental data combined with appropriate flow models are essential for predicting reservoir performance.
 
 The fundamental understanding of fluid flow behavior through permeable media directly impacts the effectiveness of enhanced oil recovery operations. The following section examines how permeability influences EOR processes and addresses the particular challenges posed by low permeability formations.
@@ -237,7 +237,7 @@ Future research should focus on further refining machine learning models for per
 In conclusion, reservoir permeability will remain a cornerstone petrophysical property in the digital oilfield era. Integrating physics-based understanding with data analytics can continue to advance our ability to characterize and model fluid flow in the complex porous media of hydrocarbon reservoirs.
 
 \newpage
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 \end{document}
 

@@ -14,4 +14,4 @@ pdflatex main.tex
 pdflatex main.tex
 
 # Clean up auxiliary files
-rm -f *.aux *.log *.bbl *.blg *.toc *.out
+rm -f *.aux *.log *.bbl *.blg *.toc *.out *.bcf *.xml *.run.xml
